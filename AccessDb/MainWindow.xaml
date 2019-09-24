@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="TextArea" HorizontalAlignment="Left" Margin="0,70,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="69" Width="350"/>
-        <Button x:Name="See_Assets" Content="See Assets" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="89" Height="31" Click="See_Assets_Click"/>
+        <Button x:Name="See_Assets" Content="See Assets" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="114" Height="40" Click="See_Assets_Click"/>
+        <TextBox x:Name="TextArea" HorizontalAlignment="Left" Height="113" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Margin="10,31,0,0" TextChanged="TextArea_TextChanged" Text="Asset Description"/>
+        <TextBox x:Name="Employees" HorizontalAlignment="Left" Height="113" Margin="171,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" TextChanged="Employees_TextChanged" Text="Employees First Name"/>
+        <Button x:Name="See_Employees" Content="Button" HorizontalAlignment="Left" Margin="171,144,0,0" VerticalAlignment="Top" Width="114" Height="40" Click="See_Employees_Click"/>
+        <Button x:Name="AddEmployee" Content="Add Employee" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="387,144,0,0" Height="40" Click="AddEmployee_Click"/>
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="23" Margin="387,68,0,0" TextWrapping="Wrap" Text="FirstName" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.229,0.783" TextChanged="FirstName_TextChanged"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="23" Margin="387,96,0,0" TextWrapping="Wrap" Text="LastName" VerticalAlignment="Top" Width="120" TextChanged="LastName_TextChanged"/>
     </Grid>
 </Window>
